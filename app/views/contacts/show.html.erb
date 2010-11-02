@@ -1,0 +1,19 @@
+<p style="color: green", align=center><%= flash[:notice] %></p>
+	<div id="innercontent" class="clearfix">            
+		<h1>Contact Us</h1>
+		<p class="thanks">
+            <br />
+			<br />
+            <br />
+			<br />
+			Thank you, <%=h @contact.name %>.  Your inquiry has been sent.
+			<br />
+			A Northern Star Representative will contact you as soon as possible.
+			<br />
+			<br />
+            <br />
+			<%= link_to "Back", new_contact_path %>
+            <br />
+            <br />
+		</p>
+	</div>

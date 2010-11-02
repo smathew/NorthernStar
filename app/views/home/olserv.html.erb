@@ -1,0 +1,368 @@
+<div id="innercontent" class="clearfix">
+                	<a name="top"></a>
+                	<h1>Online Services</h1>
+                    	<%= image_tag "homebanking.jpg", :class=>"fright", :alt=>"baby with a laptop" %>
+                    	<ul class="anchor">
+                            <li><%= link_to "About e-Branch", :anchor => "ebranch" %></li>
+                            <li><%= link_to "Online Loan Application", :anchor => "loanapp" %></li>
+                            <li><%= link_to "Online Forms", :anchor => "forms" %></li>
+                            <li><%= link_to "Check Reordering", :anchor => "checks" %></li>
+                            <li><%= link_to "Security Information", :anchor => "security" %></li>
+                            <li><%= link_to "EzPay 24", :anchor => "ezpay" %></li>
+                            <li><%= link_to "Online Membership Application", "https://secure.andera.com/index.cfm?fiid=20406982F28241DDAECA062A8E480B94", :rel=>"external" %></li> 
+						</ul>
+                    <a name="ebranch"></a>
+                    <h2>About <em>e-</em>Branch</h2>
+                    <p>
+                        Northern Star's e-Branch is a comprehensive online banking
+                        package offering you convenient access to many aspects
+                        of your account. e-Branch is equivalent to the home banking
+                        product large banks offer. Supplementary units of e-Branch
+                        can be added to give you greater access to your Northern
+                        Star accounts online. Whether it's Online Banking, EzPay24,
+                        Loan24, VISA Online, or e-Statements, all e-Branch services
+                        are free to Northern Star members. The following is a
+                        list of the different sections of e-Branch and a description
+                        of each one.
+                    </p>
+                    <p>
+                        See our <%= link_to "<em>e</em>-Branch
+                        Frequently Asked Questions", faq_path %> for other information.
+                    </p>
+                    <p>&nbsp;</p>
+                    <h2>Online Banking</h2>
+                    <p>Online Banking offers you access to your Northern Star
+                        account anytime and anywhere you have an internet connection.
+                        With e-Branch, you can get up to the minute balances
+                        on accounts, transfer funds, make loan payments, view
+                        copies of cleared checks, and transfer money between
+                        two separate Northern Star accounts.</p>
+                    <p>&nbsp;</p>
+                    <h2>Loan24</h2>
+                    <p>Loan24 is Northern Star's new around-the-clock loan center.
+                        Loan applications can be accepted online or over the
+                        phone, and in most cases, you will get a reply to your
+                        loan request within an hour. The application process
+                        is easy and fast. To apply for a loan over the phone,
+                        call us at 757-487-3474 and follow the prompts. To apply
+                        online, fill out our easy 
+                        <%= link_to "online loan application", "https://www.24x7loans.com/northernstarcuauto/LoanApp.aspx", :rel=>"external" %>.</p>
+                    <p>&nbsp;</p>
+                    <h2><em>e</em>-Statements &amp; Online Check Images</h2>
+                    <p>For those members who want the latest up to date information
+                        on their account, e-Statements is the service of choice.
+                        Regular paper statements that are mailed to your house
+                        go through a series of steps, including external processing,
+                        printing, stuffing, addressing, and mailing. e-Statements
+                        goes through a simple two step electronic process before
+                        you are notified. e-Statements are not sent directly
+                        to your e-mail address, but to a secure server where
+                        your current and past statements are stored. Your e-Statements
+                        are stored for as far back as you have been using the
+                        service.</p>
+                    <p>Also stored on the <em>e</em>-Statement site are electronic
+                        copies of your cleared checks.&nbsp; Once your checks
+                        have been cashed by their respective parties, these images
+                        will be available to you if you in case you ever need
+                        a copy.</p>
+                    <p>&nbsp;</p>
+                    <h2>VISA Online</h2>
+                    <p>Accessing your VISA account has never been so easy. With
+                        VISA Online, you can look at your current balance, review
+                        recent purchases, make payments, and review transaction
+                        history. This service is free to all members of Northern
+                        Star Credit Union, and sign-up can be done through e-Branch.
+                        Just click on the link in the e-Branch labeled VISA Online.</p>
+            		<p class="top"><%= link_to "Back to Top", :anchor => "top" %></p>
+                    <hr />
+                    <a name="loanapp"></a><h2>Online Loan Application</h2>
+                    <p>If you are looking for a quick and easy loan application,
+                        Loan24 is our solution for you.&nbsp; You can <%= link_to "apply online", "https://www.24x7loans.com/northernstarcuauto/LoanApp.aspx", :rel=>"external" %> or over the phone for car loans, Visa credit cards, personal loans, and second mortgages.&nbsp; </p>
+                    <p>You can access Loan24 by using our 
+                    <%= link_to "online application", "https://www.24x7loans.com/northernstarcuauto/LoanApp.aspx", :rel=>"external" %> or calling 487-3474 and follow the
+                        prompt.</p>
+                    <p class="top"><%= link_to "Back to Top", :anchor => "top" %></p>
+                    <hr />
+                    <a name="forms"></a><h2>Online Forms</h2>
+                    <p>The following is a list of forms available online for
+                    your convenience.&nbsp;</p>
+                    <p>All forms require signature verification; therefore, they
+                        must physically be brought to a Northern Star branch
+                        by the primary account holder.&nbsp; Proper ID is required,
+                        unless your identification and signature have been scanned
+                        into our system.&nbsp;</p>
+                    <p>The following forms require <%= link_to "Adobe Acrobat Reader", "http://www.adobe.com/products/acrobat/readstep2.html", :rel=>"external" %> for viewing and printing.</p>
+                    <ul class="bull">
+                        <li><%= link_to "<em>e</em>-Branch Registration form", root_path + "pdf/registration.pdf", :rel=>"external" %></li>
+                        <li><%= link_to "<em>e</em>-Branch Re-registration form", root_path + "pdf/reregistration.pdf", :rel=>"external" %>&nbsp; <em>(lost password)</em></li>
+                        <li><%= link_to "Multiple Account<em>e</em>-Branch Authorization", root_path + "pdf/multiacct.pdf", :rel=>"external" %></li>
+                        <li><%= link_to "<em>e</em>-Statement Registration form", root_path + "pdf/estatementform.pdf", :rel=>"external" %></li>
+                        <li><%= link_to "Reg E Consent Form", root_path + "pdf/RegConsent.pdf", :rel=>"external" %></li>
+                    </ul>
+                    <p class="top"><%= link_to "Back to Top", :anchor =>"top" %></p>
+					<a name="checks" id="checks"></a>
+                    <hr />
+                    <h2>Reordering Checks</h2>
+                    <p>With so many options available for paper checks, it&rsquo;s
+                        easy to find a style that suits your personality.&nbsp; Choose
+                        from a custom design or select the standard Northern
+                        Star Credit Union checks, there is a style for every
+                        budget.</p>
+                    <p>Reordering can be done online or over the phone.&nbsp;  Please
+                        make sure you have all necessary information and a copy
+                        of a check or your check reorder form.</p>
+                    <p><strong>Harland Clarke</strong><br />
+                        1-800-275-1053<br />
+                    <%= link_to "www.harlandclarke.com", "https://www.harlandclarke.com/", :rel=>"external" %></p>
+                    <p><strong>What information will you need?</strong><br />
+                        <em>Routing and Transit Number</em> &ndash; Nine digit
+                        number located at the bottom left corner of your check.&nbsp; This
+                        identifies Northern Star Credit Union as your financial
+                        institution.</p>
+                    <p>
+                        <strong>Account Number </strong>&ndash; Appearing right after your
+                        account number or the check sequence number.&nbsp; It
+                        most likely be the same as your account number with Northern
+                        Star Credit Union, but may also contain two additional
+                        numbers afterward.&nbsp; Be sure to include these extra
+                        numbers, as they help identify your checking account
+                        with us.&nbsp; </p>
+                    <p><strong>Important</strong> If your name or address has
+                        changed, please call Northern Star Credit Union at 757-487-3474
+                        before reordering checks.</p>
+                    <p class="top"><%= link_to "Back to Top", :nchor => "top" %></p>
+                    <hr />
+                    <a name="security"></a><h2>Security Information</h2>
+                    <p>Northern Star is committed to making sure that <em>e</em>-Branch
+                        is safe and secure. With our security infrastructure
+                        in place we are confident that access to your accounts
+                        is private and secure. Be sure and check out the 
+                        <%= link_to "<em>e</em>-Branch FAQ", faq_path %> for other information.</p>
+                    <p><br />
+                        <strong>You Play a Role in Security</strong><br />
+                        While Northern Star works to protect your financial privacy,
+                        you also play a role in protecting your accounts. There
+                        are a number of steps you can take to ensure that your
+                        financial experience on the internet is safe and secure.</p>
+                    <p><br />
+                        <strong>Ways to Protect Yourself</strong></p>
+                    <ul>
+                        <li>First and foremost, don't reveal your PIN to anyone
+                            else. Your PIN is designed to protect the privacy
+                            of your account information, but it will only work
+                            if you keep it to yourself. If you think your PIN
+                            has been compromised, change it immediately online.<br />
+                            &nbsp; </li>
+                        <li>Don't walk away from your computer if you are in
+                            the middle of an <em>e</em>-Branch session.<br />
+                            &nbsp; </li>
+                        <li>When you are finished using <em>e</em>-Branch, always
+                            exit before visiting other Internet sites.<br />
+                            &nbsp; </li>
+                        <li>If anyone else is likely to use your computer, clear
+                            your cache or turn off and re-initiate your browser
+                            in order to eliminate copies of web pages that have
+                            been stored in your hard drive. How you clear your
+                            cache will depend on the browser and version you
+                            have. This function is generally found in your preferences
+                            menu.<br />
+                            &nbsp; </li>
+                        <li>Northern Star strongly recommends that you use a
+                            browser with 128-bit encryption to conduct secure
+                            financial transactions over the Internet. You can
+                            download a 
+                            <%= link_to "Netscape", "http://www.netscape.com/comprod/mirror/client_download.html", :rel=>"external" %> or <%= link_to "Microsoft", "http://www.microsoft.com/windows/ie/downloads/default.asp", :rel=>"external" %> browser that provides the highest level of 
+                            encryption commercially available.</li>
+                    </ul>
+                    <p><strong>Browser/Security Encryption</strong><br />
+                            Encryption helps protect your private information so
+                            that it cannot be intercepted and read by a third
+                            party. <br />
+    					<br />
+                        Encryption is the scrambling of information for transmission
+                        back and forth between two points. A virtual key is required
+                        to decode the information. When you request information
+                        about your accounts, the request is sent encrypted (scrambled)
+                        to Northern Star.<br />
+    					<br />
+                        We then decode your request for information and send
+                        it back to you in an encrypted format. When you receive
+                        it, your information is automatically decoded so that
+                        you can read it. <br />
+    					<br />
+                        The encryption technology used by <em>e</em>-Branch is
+                        so secure that it is classified by the U.S. Department
+                        of Defense and export of this technology to other countries
+                        is forbidden by law. <br />
+    					<br />
+                        You can download a 
+                        <%= link_to "Netscape", "http://www.netscape.com/comprod/mirror/client_download.html", :rel=>"external" %> or <%= link_to "Microsoft", "http://www.microsoft.com/windows/ie/downloads/default.asp", :rel=>"external" %> browser
+                        that provides the highest level of encryption commercially
+                        available.</p>
+                    <p><br />
+                        <strong>Digital Identity</strong><br />
+                        For digital identity verification, we have a digital
+                        server certificate that your browser uses each time you
+                        sign on to verify that indeed you are connected to Northern
+                        Star.</p>
+                    <p><br />
+                        <strong>A Note on Cookies</strong><br />
+                        <em>e</em>-Branch utilizes cookies to hold a random session
+                        ID each time you log in. This ID is verified each time
+                        you send or receive information from <em>e</em>-Branch.
+                        The session ID provides security for your private information
+                        by responding only to requests that are intended for
+                        you. The session cookie is not stored on your computer,
+                        and it is dismissed when you exit your browser, or are
+                        logged out after the inactivity period. Without accepting
+                        this session ID (cookie), you cannot explore your accounts
+                        with <em>e</em>-Branch.</p>
+                    <h3>Online Fraud and Phishing</h3>
+                    <p><strong><em>If you receive any suspicious E-mail or link
+                        to a website that appears to be from Northern Star Credit
+                        Union, report it to <%= mail_to "abuse@nstarcu.org", "abuse@nstarcu.org" %></em></strong></p>
+                    <p>
+                        Phishing is the act of obtaining personal information
+                        by use of E-mail scams or fraudulent websites. <br />
+    					<br />
+                        A Phishing scam can be very difficult to detect since
+                        thieves will dress up their E-mail and website to look
+                        like it is coming from a real Business or Financial Institution.&nbsp; These
+                        E-mails and websites take many forms, such as a Survey,
+                        Questionnaire, or Notice of Expiring Service.&nbsp; Many
+                        even offer the chance to receive Money or Gifts for filling
+                        out a Survey or Questionnaire.&nbsp;  To help prevent
+                        you from becoming a victim, we have come up with some
+                        tips and precautions to identify a Phishing Scam. <br />
+                        <br />
+                        <br />
+                        <strong>Never Give Out Personal Information</strong><br />
+                        <br />
+                        Northern Star Credit Union will NEVER send an E-Mail
+                        to obtain or verify your Name, Address, Social Security
+                        Number, Phone Number, Account Number, PIN Number or Credit/Debit
+                        Card Number.&nbsp; If you have opened an account with
+                        us, we already have that information so there is no need
+                        for us to ask you for it again!&nbsp; Furthermore, we
+                        do not accept changes of Name, Address, Phone Number,
+                        or E-Mail address through our website or E-mail.&nbsp; Changes
+                        like this must be made in person at one of our Northern
+                        Star Credit Union Branches. <br />
+                        <br />
+                        <br />
+                        <strong>Be Cautious of Fake Surveys</strong><br />
+                        <br />
+                        From time to time, Northern Star Credit Union may ask
+                        our members to fill out a Survey to help us improve our
+                        level of service.&nbsp; However, these surveys are anonymous
+                        and we DO NOT ask for your Address, Social Security Number,
+                        Phone Number, Account Number, PIN Number or Credit/Debit
+                        Card Number on the form.&nbsp; If you receive an E-mail
+                        or link to a website that asks for any this information,
+                        do not answer any of the questions and report the E-mail
+                        or link to Northern Star Credit Union. <br />
+                        <br />
+                        <br />
+                        <strong>Information on Expiring Services</strong><br />
+                        <br />
+                        Northern Star Credit Unions offers Online Home Banking,
+                        a Telephone Audio Response Line, and Online Bill Payment
+                        services to its members.&nbsp;  These services NEVER
+                        expire and are closed out automatically if a member closes
+                        their account.&nbsp; Since these services NEVER expire,
+                        we will never contact you to renew them.&nbsp; <br />
+                        <br />
+                        <br />
+                        <strong>Temporarily Suspended Account</strong><br />
+                        <br />
+                        Many Phishing Scams will send fake E-mails disguising
+                        themselves as a financial institution that has suspended
+                        your account due to a billing error or failure to update
+                        your account information.&nbsp; These fake E-mails will
+                        take you to a link that asks for information like your
+                        name, Address, Social Security Number, Phone Number,
+                        Account Number, PIN Number or Credit/Debit Card Number.&nbsp; Northern Star Credit Union members will be contacted by one of
+                        our staff and asked to come to one of our branches if
+                        there is a problem with their account or if account information
+                        needs to be updated.&nbsp; Northern Star Credit Union
+                        will never contact you via e-mail regarding the status
+                        of your account or to update your personal information. <br />
+                        <br />
+                        <br />
+                        If you have followed any links or e-mail and submitted
+                        your personal information, please contact us at 757-487-3474
+                        or come into any of our branches immediately. <br />
+                        <br />
+                        <br />
+                        If you receive any suspicious E-mail or link to a website
+                        that appears to be from Northern Star Credit Union, report
+                        it to <%= mail_to "abuse@nstarcu.org", "abuse@nstarcu.org" %> <br />
+                        <strong><em>For more information on Phishing, the Federal Trade Commission
+                        (FTC) has released a document 
+                        <%= link_to "&ldquo;How Not to Get Hooked by a &lsquo;Phishing&rsquo; Scam.&rdquo;", "http://www.ftc.gov/bcp/edu/pubs/consumer/alerts/alt127.pdf" %></em></strong></p>
+                    <table class="hours">
+                        <tr>
+                            <th colspan="2"><strong>For more information on Identity
+                                    Theft and Online Scams:</strong></th>
+                        </tr>
+                        <tr>
+                            <td><strong>Credit Reporting Companies</strong></td>
+                            <td><strong>United States</strong><strong> Government</strong></td>
+                        </tr>
+                        <tr>
+                            <td><%= link_to "Equifax", "http://www.equifax.com/" %>:
+                                1-800-525-6285 <br />
+                                <br />
+                                <%= link_to "Experian", "http://www.experian.com/" %>:
+                                1-888-397-3742 <br />
+                                <br />
+                                <%= link_to "TransUnion", "http://www.transunion.com/" %>:
+                                1-800-680-7289 </td>
+                            <td>Federal Trade Commission Identity Theft Hotline: <br />
+                                1-877-ID-THEFT or 1-877-438-4338 <br />
+                                <br />
+                                To visit the FTC Identity Theft website, click 
+                                <%= link_to "here", "http://www.ftc.gov/bcp/edu/microsites/idtheft/consumers/index.html", :rel=>"external" %>. <br />
+                                <br />
+                                Social Security Administration Fraud Hotline: <br />
+                                1-800-269-0271 </td>
+                        </tr>
+                    </table>
+                    <p>&nbsp;</p>
+                    <br />
+                    <p class="top"><%= link_to "Back to Top", :anchor => "top" %></p>
+                    <hr />
+                    <a name="ezpay"></a><h2>EZPay 24</h2>
+                    <p>EzPay24 is the free and easy way to pay bills online.&nbsp; EzPay24
+                        is available to Northern Star members with checking accounts, <em>e</em>-Branch,
+                        and <em>e</em>-Statements and is completely free of charge.&nbsp; <br />
+                        EzPay24 makes it easy to:</p>
+                    <ul>
+                        <li>Make online payments to businesses and individuals</li>
+                        <li>Make one time payments or set up recurring payments</li>
+                        <li>Have e-Bills sent directly from businesses</li>
+                        <li>Have e-mail reminders for payments</li>
+                        <li>Pay your bills 24 hours a day, 365 days a year</li>
+                    </ul>
+                    <p>Signing up for Northern Star's free EzPay24 is the online
+                        bill payment solution is easy, and in most cases can
+                        be done online.&nbsp; You must first be a registered <em>e</em>-Branch
+                        and <em>e</em>-Statement user&nbsp;with Northern Star.&nbsp; Both
+                        of these services are free as well, and open to all Northern
+                        Star credit Union members.&nbsp; The 
+                        <%= link_to "<em>e</em>-Branch", root_path + "pdf/registration.pdf",  :rel=>"external" %> 
+                        and <%= link_to "<em>e</em>-Statement", root_path + "pdf/estatementform.pdf", :rel=>"external" %> 
+                        registration forms can be found on our <%= link_to "Online Forms", :anchor => "forms" %> page, and must be printed out and dropped off
+                        at your local Northern Star branch.&nbsp; <br />
+                        If you are already an <em>e</em>-Branch and <em>e</em>-Statement
+                        user, and have a checking account, you can sign up for
+                        EzPay24 by logging into <em>e</em>-Branch and clicking
+                        on the &quot;Pay Bills&quot; link.&nbsp; After clicking
+                        on this link, you will be walked through the registration
+                        process for EzPay24.&nbsp; Signing up is easy and takes
+                        less than fifteen minutes.&nbsp; <br />
+                        If you have any further questions concerning this service,
+                        or any of our other services, feel free to call us during
+                        regular working hours at (757)487-3474.</p>
+                    <p class="top"><%= link_to "Back to Top", :anchor => "top" %></p>
+            	</div>

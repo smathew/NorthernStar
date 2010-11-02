@@ -1,0 +1,57 @@
+<div id="innercontent" class="clearfix">            
+	<h1>Contact Us</h1>
+	<%= image_tag "custserv.jpg", :class=>"fright", :alt=>"happy customer" %>
+            <p>
+                <br />
+                <span class="redbold">*PLEASE NOTE* </span><br />
+                *Address, telephone number, or email address changes must be
+                done <strong>in
+                person</strong> at one of our branches.
+                *Northern Star employees will not give out balance information
+                or transfer funds over the phone or by email. </p>
+			<div class="contactleft">
+                <p>&nbsp;</p>
+				<h3 class="centertext">&nbsp;</h3>
+				<h3 class="centertext"><strong>Northern Star Credit Union</strong></h3>
+				<p class="centertext">
+				    5100 George Washington Hwy.<br />
+				    Portsmouth, VA 23702</p>
+				<p class="fleft">
+                     Main<br />
+				     Fax<br />
+				    TelStar<br />
+                    Lost / Stolen Visa<br />
+                    Visa Balance Inquiries<br />
+                    Visa Security Dept.<br />
+                    EZPay24 Questions<br />
+				</p>
+                    <p class="fright">757-487-3474<br />
+                        757-487-9464<br />
+                        757-487-9415<br />
+                        (800) 449-7728<br />
+                        (800) 654-7728<br />
+                        (888) 918-7313<br />
+                        (888) 918-7584<br />
+                    </p>                    
+			</div>
+			<div class="contactright">
+			    <% form_for(@contact) do |f| %>
+					<%= f.error_messages %>
+			        <fieldset>
+			            <h3 class="centertext">How can we help you?</h3>
+                        <dl class="clearfix">
+			                <dt><label for="contactname">Name:</label></dt>
+			                <dd><%= f.text_field :name, :size=>27, :class=>"text" %></dd>
+			                <dt><label for="contactemail">Email:</label></dt>
+			                <dd><%= f.text_field :email_address, :size=>27, :class=>"text" %></dd>
+                            <dt><label for="contactphone">Phone(XXX-XXX-XXXX):</label></dt>
+                            <dd><%= f.text_field :phone_number, :size=>27, :class=>"text" %></dd>
+			                <dt class="long">
+			                    <label for="contactcomment" class="inquiry"> Questions / Comments:</label></dt>
+			                <dd><%= f.text_area :comments, :rows=>5, :cols=> 18 %></dd>
+                        </dl>
+			            <%= f.submit 'Submit' %>
+                    </fieldset>
+                <% end %>
+	</div>
+</div>

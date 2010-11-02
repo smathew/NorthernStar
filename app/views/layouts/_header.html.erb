@@ -1,0 +1,88 @@
+<div id="container">
+    	<div id="header" class="clearfix">
+            <form action="https://www.nstarcu.org/HBV3_2/login.asp" method="post" id="login">
+                <dl>
+                    <dt><label for="account">Account #:</label></dt>
+                    <dd><input id="account" name="account" class="short" size="10" value="" onkeypress="allowInteger();" /></dd>
+                    <dt><label for="pin">Password:</label></dt>
+                    <dd><input id="pin" type="password" name="pin" class="short" size="10" value="" /></dd>
+                </dl>
+				<p class="block">
+                    <input type="submit" value="Sign In" class="loginbtn fright" />
+				</p>
+            </form>
+			<%= link_to "&nbsp;", root_path %>
+        </div>
+        <div id="outercontent" class="clearfix">
+			<div id="outerleft" class="clearfix">
+				<ul id="menu">
+					<li>
+						<%= link_to "Home", root_path %>
+					</li>
+					<li>
+						<%= link_to "Products &amp; Services", prodserv_path %>
+						<ul>
+                            <li><%= link_to "Savings Accounts", prodserv_path(:anchor => "savings") %></li>
+                            <li><%= link_to "Checking Accounts", prodserv_path(:anchor => "checking") %></li>
+                            <li><%= link_to "Kasasa", prodserv_path(:anchor => "kasasa") %></li>
+                            <li><%= link_to "Loans", prodserv_path(:anchor => "loans") %></li>
+                            <li><%= link_to "Score Enhancement", prodserv_path(:anchor => "score") %></li>
+                            <li><%= link_to "Other Services", prodserv_path(:anchor => "other") %></li>
+						</ul>
+					</li>
+					<li>
+						<%= link_to "Online Services", olserv_path %>
+						<ul>
+                            <li><%= link_to "About e-Branch", olserv_path(:anchor => "ebranch") %></li>
+                            <li><%= link_to "Loan Application", olserv_path(:anchor => "loanapp") %></li>
+                            <li><%= link_to "Online forms", olserv_path(:anchor => "forms") %></li>
+                            <li><%= link_to "Check Reordering", olserv_path(:anchor =>"checks") %></li>
+                            <li><%= link_to "Security Information", olserv_path(:anchor => "security") %></li>
+                            <li><%= link_to "EzPay 24", olserv_path(:anchor => "ezpay") %></li>
+                            <li><%= link_to "Membership Application", "https://secure.andera.com/index.cfm?fiid=20406982F28241DDAECA062A8E480B94", :rel=>"external" %></li> 
+						</ul>
+					</li>
+					<li>
+						<%= link_to "Rates", rates_path %>
+						<ul>
+							<li><%= link_to "Rate Schedule", rates_path(:anchor => "rates") %></li>
+							<li><%= link_to "Fee Schedule", rates_path(:anchor =>"fees") %></li>
+                            <li><%= link_to "Calculators", rates_path(:anchor => "calculators") %></li>
+						</ul>
+					</li>
+					<li>
+						<%= link_to "About Northern Star", about_path %>
+						<ul>
+							<li><%= link_to "Contact Us", new_contact_path %></li>
+                            <li><%= link_to "Locations &amp; Hours", about_path(:anchor => "hours") %></li>
+                            <li><%= link_to "Calendar", about_path(:anchor => "calendar") %></li>
+                            <li><%= link_to "Staff", about_path(:anchor => "staff") %></li>
+                            <li><%= link_to "Scholarship", about_path(:anchor => "scholarship") %></li>
+                            <li><%= link_to "Employment", about_path(:anchor => "employment") %></li>
+                            <li><%= link_to "Our History", about_path(:anchor => "history") %></li>
+						</ul>
+					</li>
+					<li>
+						<%= link_to "Membership", membership_path %>
+						<ul>
+							<li><%= link_to "Why Northern Star?", membership_path(:anchor =>"why") %></li>
+							<li><%= link_to "Field of Membership", membership_path(:anchor => "field") %></li>
+                            <li><%= link_to "How to Join", membership_path(:anchor => "join") %></li>
+                            <li><%= link_to "Relationship Packages", membership_path(:anchor => "relationship") %></li>
+                            <li><%= link_to "Account Disclosures", disclosure_path %></li>
+						</ul>
+					</li>
+                    <li>
+						<%= link_to "Our Partners", partners_path %>
+					</li>
+                    <li>
+						<%= link_to "Business Services", business_path %>
+						<ul>
+							<li><%= link_to "Financial Solutions", business_path(:anchor => "financial") %></li>
+							<li><%= link_to "Business Resources", business_path(:anchor => "resources") %></li>
+						</ul>
+					</li>
+				</ul>
+                <%= link_to image_tag("newsletter2.jpg", :alt=>"Newsletter"), "http://archive.constantcontact.com/fs044/1102161799240/archive/1103437621180.html", :rel=>"external" %>
+            </div>
+			<div id="outerright" class="clearfix">

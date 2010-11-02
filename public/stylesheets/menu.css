@@ -1,0 +1,76 @@
+/***************************/
+/*        SIDE MENU        */
+/***************************/
+
+
+/* TOP LEVEL */
+ul#menu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	line-height: 2.3em;
+	font-size: 12px;
+}
+
+ul#menu li {
+	float: left;
+	position: static;
+	right: auto;
+}
+
+ul#menu li a {
+	height: 2.3em;
+	text-decoration: none;
+	display: block;
+	width: 135px;
+	padding-left: 5px;
+	color: #000000;
+	font-weight: bold;
+	background-image: url(../images/button.jpg);
+	background-repeat: no-repeat;
+	margin-bottom: 4px;
+}
+
+ul#menu li a:hover {
+	color: #000000;
+	background-image: url(../images/button_flip.jpg);
+	background-repeat: no-repeat;
+}
+
+ul#menu li:hover {
+	background-color: ;
+}
+
+
+
+/* SECOND LEVEL */
+ul#menu li ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0 none;
+	position: absolute;
+	left: -500px;
+	width: 142px;
+	margin: -32px 0 0 139px; /* margin */
+	background-color: #ccc9c9;
+	z-index: 4;
+}
+
+ul#menu li:hover ul, ul#menu li li:hover ul, ul#menu li.sfhover ul, ul#menu li li.sfhover ul {
+	left: auto;
+}
+
+ul#menu li:hover ul li a {
+	color: #000000; /* 2nd level font color */
+	background-image: none;
+	border-top: solid white 1px;
+	font-size: 11px;
+}
+
+ul#menu li:hover ul li a:hover {
+	color: #a33845;
+}
+
+ul#menu li ul li {
+	border: 0 none;
+}

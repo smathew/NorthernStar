@@ -1,0 +1,26 @@
+<div id="index" class="clearfix">
+	<p>
+		<%= render :partial => 'layouts/slideshow', :locals => {
+		:slideimages => [
+			{ :image => 'RegE_Banner.jpg', :url => 'pdf/RegConsent.pdf' },
+			{ :image => 'studentloanbanner.jpg', :url => 'http://www.custudentloans.org/nstarcu' },
+			{ :image => 'kasasa.giving.jpg', :url => prodserv_path(:anchor => 'kasasa') },
+			{ :image => 'promo_autobuy.jpg', :url => 'pdf/promo.auto.pdf' },
+			{ :image => 'kasasa.save.jpg', :url => prodserv_path(:anchor => 'kasasa') },
+			{ :image => 'promo_creditcard.jpg', :url => 'pdf/promo.visa.pdf' },
+			{ :image => 'kasasa.cash.jpg', :url => prodserv_path(:anchor => 'kasasa') }
+		]}
+	-%>	
+	</p>
+
+		<div class="promo clearfix">
+			<%= link_to image_tag("index_loan.jpg", :alt => ""), "https://www.24x7loans.com/northernstarcuauto/LoanApp.aspx", :rel=>"external confirm", :class=>"loan" %>
+            <%= link_to image_tag("index_member.jpg", :alt => ""),"https://secure.andera.com/index.cfm?fiid=20406982F28241DDAECA062A8E480B94", :rel=>"external confirm", :class=>"member" %>
+            <%= link_to image_tag("index_rates.jpg", :alt => "Rates"), rates_path, :class=>"rates" %>
+            <span class="news clearfix">To sign up for<br />
+            <strong>e-Statements</strong>, fill out this <strong><%= link_to "form", "pdf/estatementform.pdf", :rel=>"external" %></strong> and drop it by one of our <%= link_to "branches", about_path(:anchor => "hours") %>.<br />
+            <br />
+            <br />
+            </span>
+        </div>
+</div>

@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Email from contact form</title>
+</head>
+<body style="background-color: #ffffff">
+	<table style="border: 0 none; width: 500px">
+		<tr><td colspan="2" style="background-color: #a33845; font-weight: bold">----- [ EMAIL CONTENTS ] ---------------</td></tr>
+		<tr>
+			<td style="background-color: #d6d3ce">Subject: </td>
+			<td style="background-color: #bee7fb">Message from Northern Star Contact Form</td>
+		</tr>
+		<tr>
+			<td style="background-color: #d6d3ce">Name: </td>
+			<td style="background-color: #bee7fb"><%= @app.name %></td>
+		</tr>
+		<tr>
+			<td style="background-color: #d6d3ce">Email: </td>
+			<td style="background-color: #bee7fb">
+				<a href="mailto:<%= @app.email_address %>"><%= @app.email_address %></a>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: #d6d3ce">Phone: </td>
+			<td style="background-color: #bee7fb"><%= @app.phone_number %></td>
+		</tr>
+		<tr>
+			<td style="background-color: #d6d3ce">Questions/Comments: </td>
+			<td style="background-color: #bee7fb"><%= @app.comments %></td>
+		</tr>
+		<tr>
+			<td style="background-color: #d6d3ce">Send Date: </td>
+			<td style="background-color: #bee7fb"><%= Time.now.strftime("%A, %B %d, %Y, %H:%M:%S") %></td>
+		</tr>
+		<tr><td colspan="2" style="background-color: #a33845; font-weight: bold">----- [ END OF EMAIL TRANSMISSION ] ---------------</td></tr>
+	</table>
+</body>
+</html>
